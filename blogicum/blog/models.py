@@ -46,8 +46,7 @@ class Category(PublishedModel):
 class Location(PublishedModel):
     name = models.CharField(
         max_length=256,
-        verbose_name='Название места'
-        )
+        verbose_name='Название места')
 
     class Meta:
         verbose_name = 'местоположение'
@@ -60,11 +59,9 @@ class Location(PublishedModel):
 class Post(PublishedModel):
     title = models.CharField(
         max_length=256,
-        verbose_name='Заголовок'
-        )
+        verbose_name='Заголовок')
     text = models.TextField(
-        verbose_name='Текст'
-        )
+        verbose_name='Текст')
     pub_date = models.DateTimeField(
         verbose_name='Дата и время публикации',
         help_text=pub_date_help_text)
